@@ -5,7 +5,7 @@ C=client
 all:$(S) $(C)
 
 $(S):$(D).c $(S).c
-	gcc $^ -o $@
+	gcc $^ -o $@ -lmariadb
 
 $(C):$(C).c
 	gcc $^ -o $@
